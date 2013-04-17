@@ -7,6 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
+<form action="signup" method="POST">
+	First Name :<input type="text" name="fName" value="${firstname}"/><br/>
+	Last Name :<input type="text" name="lName" value="${lastname}"/><br/>
+	User Name :<input type="text" name="uName" value="${username}"/><br/>
+	Password :<input type="password" name="password"/><br/>
+	Re-enter Password :<input type="password" name="passwordAgain"/>
+	<input type=submit value=submit>
+	
 
+</form>
 </body>
 </html>

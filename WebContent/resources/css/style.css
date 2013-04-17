@@ -80,21 +80,21 @@ margin: 0px px auto  50px ;
 	display: inline-block;
 }
 
-#main-content #left-content {
+ #left-content {
 	float: left;
-	border: 5px solid threedhighlight;
+	border: 1px solid infobackground;
 	height: 500px;
 	width: 230px;
 	margin: 0;
 }
 
-#main-content #left-content .side-content {
+#left-content .side-content {
 	margin: 0;
 	border-spacing: 5px overflow;
 	height: 250px;
 }
 
-#main-content #left-content .side-content ul li {
+#left-content .side-content ul li {
 	list-style: none;
 	width: 100px;
 	text-align: center;
@@ -104,7 +104,7 @@ margin: 0px px auto  50px ;
 700
 px
 
-#main-content #middle-content {
+#middle-content {
 	float: left;
 	height: 500px;
 	border: 1px solid black;

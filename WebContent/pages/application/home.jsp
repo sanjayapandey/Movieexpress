@@ -1,10 +1,11 @@
-<%@ include file="../../includes/header.jsp"%>
+
+<%@ include file="../../includes/header.jsp" %>
 
 <%@ include file="../../includes/navbar.jsp" %>
 
-<div id="image-slider">
-<h1>image slider goes here</h1>
-</div>
+<!-- <div id="image-slider"> -->
+<!-- <h1>image slider goes here</h1> -->
+<!-- </div> -->
 
 <div id="main-content">
 			<div id="left-content">
@@ -37,10 +38,11 @@
 				<img alt="Top1" src="resources/images/top1.jpg" height="200px" />
 				<img alt="Top1" src="resources/images/top1.jpg" height="200px" />
 			</div>
-			<div id="rate-movie">
-			<h4>Rate movie yourself</h4>
-			</div>
+<!-- 			<div id="rate-movie"> -->
+<!-- 			<h4>Rate movie yourself</h4> -->
+<!-- 			</div> -->
 			
 		</div>
 
 <%@ include file="../../includes/footer.jsp" %>
+
