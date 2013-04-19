@@ -16,8 +16,7 @@
 						<li><a href="MI">Mission Impossible</a>
 						<li><a href="tramsporter">Transporter</a>
 						<li><a href="matrix">Matrix</a>
-						
-					</ul>
+				</ul>
 				</div>
 				<div class="side-content">
 				<h4>UpComing movies</h4>

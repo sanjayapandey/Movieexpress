@@ -5,8 +5,10 @@
 		
 	</ul>
 	<ul class="menu">
-		<li><a href="home">Home</a>
-		<li><a href="about">About</a>
+		<li><a href="home">Home</a></li>
+		<li><a href="about">About</a></li>
+		<li><a href="download">Download</a>
+		
 	</ul>
 	
 

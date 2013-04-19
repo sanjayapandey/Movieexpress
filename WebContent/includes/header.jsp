@@ -5,6 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>MovieExpress</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css">
+<script src="${pageContext.request.contextPath}/resources/js/addmore.js" ></script>
 </head>
 <body>
 <div id ="wrapper">

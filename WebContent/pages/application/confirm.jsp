@@ -7,10 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-Thank you for registering. You will be redirected to the home page in 5 seconds.
-<%
-	response.addIntHeader("Refresh", 5);
-		response.sendRedirect("home");
-%>
+Thank you for registering. <a href="home"> << Back to homepage</a>
 </body>
 </html>

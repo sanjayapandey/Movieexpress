@@ -3,24 +3,23 @@ package com.movieexpress.auth.dto;
 public class User{
     int id;
     String firstName;
-    String middleName;
+  //  String middleName;
     String lastName;
-    String phone;
-    String address;
-    int userId;
+    String userName;
+    String password;
+    //int userId;
 
 
     public User() {
 
     }
 
-    public User(int id, String firstName, String middleName, String lastName, String phone, String address) {
+    public User(int id, String firstName,  String lastName, String userName, String password) {
         this.id = id;
         this.firstName = firstName;
-        this.middleName = middleName;
         this.lastName = lastName;
-        this.phone = phone;
-        this.address = address;
+        this.userName = userName;
+        this.password = password;
 
 
     }
@@ -31,69 +30,55 @@ public class User{
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("\n----------------------------------------------------------------------------------------------\n");
         stringBuilder.append("Id: " + id);
-        stringBuilder.append("\tName: " + firstName + ' ' + middleName + ' ' + lastName);
-        stringBuilder.append("\tPhone: " + phone);
-        stringBuilder.append("\tAddress: " + address);
+        stringBuilder.append("\tName: " + firstName +" "+ lastName);
+        stringBuilder.append("\tUserName: " + userName);
+        stringBuilder.append("\tPassword: " + password);
         stringBuilder.append("\n----------------------------------------------------------------------------------------------\n");
 
         return stringBuilder.toString();
 
     }
 
+	public int getId() {
+		return id;
+	}
 
-    public int getUserId() {
-        return userId;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
+	public String getFirstName() {
+		return firstName;
+	}
 
-    public int getId() {
-        return id;
-    }
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+	public String getLastName() {
+		return lastName;
+	}
 
-    public String getFirstName() {
-        return firstName;
-    }
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+	public String getUserName() {
+		return userName;
+	}
 
-    public String getMiddleName() {
-        return middleName;
-    }
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 
-    public void setMiddleName(String middleName) {
-        this.middleName = middleName;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public String getLastName() {
-        return lastName;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
+   
 }

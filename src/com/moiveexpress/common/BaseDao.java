@@ -12,7 +12,7 @@ public abstract class BaseDao {
 
     public void connect() throws Exception {
         String username = "root";
-        String password = "root";
+        String password = "";
         String url = "jdbc:mysql://localhost:3306/movieexpress";
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();

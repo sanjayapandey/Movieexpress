@@ -21,10 +21,10 @@ public class AuthDaoMysql extends BaseDao {
             while (resultSet.next()) {
                 user = new User();
                 user.setId(resultSet.getInt("id"));
-//                user.setUsername(resultSet.getString("username"));
-//                user.setPassword(resultSet.getString("password"));
-                user.setFirstName(resultSet.getString("firstname"));
-                user.setLastName(resultSet.getString("lastname"));
+                user.setUserName(resultSet.getString("username"));
+                user.setPassword(resultSet.getString("password"));
+              //  user.setFirstName(resultSet.getString("firstname"));
+             //   user.setLastName(resultSet.getString("lastname"));
 
             }
 
@@ -94,7 +94,7 @@ public class AuthDaoMysql extends BaseDao {
     }
 
     public User signup(String firstname, String lastname, String username, String password) throws Exception {
-        query = "insert into user (firstname,lastname,username, password) values (?,?,?,md5(?))";
+        query = "insert into user (first_name, last_name, user_name, password) values (?,?,?,md5(?))";
 
         User user = null;
 
@@ -107,7 +107,9 @@ public class AuthDaoMysql extends BaseDao {
             preparedStatement.setString(4, password);
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();
-//            user = new User(firstname, lastname, username);
+            System.out.println(query);
+            
+            //            user = new User(firstname, lastname, username);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -121,7 +123,7 @@ public class AuthDaoMysql extends BaseDao {
     public Boolean existsUsername(String username) throws Exception {
         Boolean existsUsername=true;
 
-        query = "Select * from user where username=?";
+        query = "Select * from user where user_name=?";
         try {
             connect();
             preparedStatement = connection.prepareStatement(query);
