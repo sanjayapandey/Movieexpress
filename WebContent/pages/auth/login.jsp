@@ -2,29 +2,17 @@
 
 <%@ include file="../../includes/navbar.jsp"%>
 
-<div id="image-slider">
-	<h1>image slider goes here</h1>
-</div>
 
-<div id="main-content">
-	<div class="login-form">
-		<h4>Please login:</h4>
-		<form action="validateUser" method="post">
-			User name: <input type="text" name="username" /> <br>
-			Password: <input type="password" name="password" /><br>
-			 <input type="submit" name="login" value="submit" />
-		</form>
-		</div>
-
-		<div class="signup-form">
-			<h4>Don't have account!! Ok, signup here</h4>
-			<form action="signup" method="post">
-				User name: <input type="text" name="username" /><br> 
-				Password: <input type="password" name="password" /> <br>
-				Repassword:<input type="password" name="repassword" /><br> 
-				<input type="submit" name="login" value="submit" />
-			</form>
-		</div>
+<div id="main-content" >
+	<form action="login" method="post" class="form-signin">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <input type ="text" name="userName" class="input-block-level" placeholder="User Name">
+            <input type ="password" name="password" class="input-block-level" placeholder="Password">
+            <label class="checkbox">
+              <input name="remember" type="checkbox" value="true"> Remember me
+            </label>
+            <input type="submit" value  ="Sign in" class="submit-button" >
+        </form>
 
 	</div>
 

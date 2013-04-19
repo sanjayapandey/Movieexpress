@@ -1,0 +1,18 @@
+select * from movie;
+Insert into movie values (
+1,"Mission Impossible" , "The best movie and best actor Torm curse" , 
+"my dir for small image" , "2012/9/10",3,3,1,23,"my dir for large image"
+);
+
+Insert into movie values (
+2,"Mission Impossible2" , "The best movie and best actor Torm curse" , 
+"my dir for small image" , "2012/9/10",3,4,6,2,"my dir for large image"
+);
+Insert into rating values (
+23,12,2
+);
+Insert into rating values (
+2,20,1
+);
+select a.id, a.title,a.description, a.small_image , a.release_date  from movie a"
+				+ "join rating b" + "order by" + "b.rate DESC" + "LIMIT ?"
