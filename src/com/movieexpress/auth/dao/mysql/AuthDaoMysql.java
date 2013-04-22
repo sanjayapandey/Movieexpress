@@ -21,11 +21,12 @@ public class AuthDaoMysql extends BaseDao {
             while (resultSet.next()) {
                 user = new User();
                 user.setId(resultSet.getInt("id"));
-                user.setUserName(resultSet.getString("username"));
+                user.setUserName(resultSet.getString("user_name"));
                 user.setPassword(resultSet.getString("password"));
               //  user.setFirstName(resultSet.getString("firstname"));
              //   user.setLastName(resultSet.getString("lastname"));
-
+                System.out.println(resultSet.getString("user_name")); 
+                System.out.println(resultSet.getString("password"));
             }
 
         } catch (Exception e) {

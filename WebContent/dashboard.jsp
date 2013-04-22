@@ -29,7 +29,7 @@
 				</div>
 			</div>
 			<div id="middle-content">
-				<form method="post" action="">
+				<form method="post" action="dashboard">
 				<table>
 				<tr>
 					<td>Movie Title</td>
@@ -39,7 +39,10 @@
 					<td>Movie Description </td>
 					<td><textarea rows="8" cols="60" name="mDesc"></textarea></td>
 				</tr>
-				
+				<tr>
+				<td>Release Date</td>
+				<td><input type="text" name="relDate">yyyy-mm-dd</td>
+				</tr>
 				<tr>
 					<td>Image Small</td>
 					<td><input type="file" name="sImage"></td>
@@ -48,7 +51,7 @@
 				<tr>
 					<td>Image Large</td>
 					<td><input type="file" name="lImage"></td>
-				</tr>
+			</tr>
 				<tr>
 					<td>Director</td>
 					<td><input type="button" value="+" onclick="clickDirector();"></td>
@@ -56,8 +59,9 @@
 				</tr>
 				<tr>
 				
-				<td id="director">First Name<input type="text" name="dfName">Middle Name<input type="text" name="dmName">Last Name<input type="text" name="dlName"></td>
-				
+				<td id="director" >
+				First Name<input type="text" name="dfName">Middle Name<input type="text" name="dmName">Last Name<input type="text" name="dlName"></td>
+				</td>
 				</tr>
 				
 				<tr>
@@ -67,6 +71,8 @@
 				
 				<td id="writer">First Name<input type="text" name="wfName">Middle Name<input type="text" name="wmName">Last Name<input type="text" name="wlName"></td>
 				
+				</tr><tr>
+				<td><input type=submit value="add"></td>
 				</tr>
 				</table>
 				 				

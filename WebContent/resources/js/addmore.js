@@ -5,5 +5,5 @@ x.innerHTML = x.innerHTML + "<br> First Name<input type='text' name='dfName' > M
 
 function clickWriter(){
 	var x = document.getElementById("writer");
-	x.innerHTML = x.innerHTML = x.innerHTML + "<br> First Name<input type='text' name='wfName' > Middle Name<input type='text' name='wmName' >Last Name<input type='text' name='wlName' >";
+	x.innerHTML  = x.innerHTML + "<br> First Name<input type='text' name='wfName' > Middle Name<input type='text' name='wmName' >Last Name<input type='text' name='wlName' >";
 }

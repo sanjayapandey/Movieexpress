@@ -33,6 +33,16 @@
     <servlet-name>download</servlet-name>
     <url-pattern>/download</url-pattern>
   </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>dashboard</servlet-name>
+    <servlet-class>com.movieexpress.auth.controller.DashBoard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dashboard</servlet-name>
+    <url-pattern>/dashboard</url-pattern>
+  </servlet-mapping>
   <context-param>
     <param-name>downloadfolder</param-name>
     <param-value>/home/kamal/workspace/movieexpress</param-value>
